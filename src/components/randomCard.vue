@@ -1,5 +1,5 @@
 <script>
-const env = import.meta.env;
+import { env } from './../const/index.js';
 export default {
     name: 'randomCard',
     data() {
@@ -23,6 +23,7 @@ export default {
             const primaryData = data.map((hero) => ({
                 id: hero.id, 
                 name: hero.name, 
+                image: hero.images.sm,
                 isSelected: false,
                 combat: hero.powerstats.combat,
                 durability: hero.powerstats.durability,
@@ -54,7 +55,8 @@ export default {
                 if(hero.isSelected) {
                     let data = { 
                         id: hero.id, 
-                        name: hero.name, 
+                        name: hero.name,
+                        image: hero.image, 
                         combat: hero.combat,
                         durability: hero.durability,
                         intelligence: hero.intelligence,

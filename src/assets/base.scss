@@ -83,3 +83,13 @@ body {
   padding-left: $left !important;
   padding-right: $right !important;
 }
+
+@mixin x-margin($left, $right) {
+  margin-left: $left !important;
+  margin-right: $right !important;
+}
+
+@mixin y-margin($top, $bottom) {
+  margin-top: $top !important;
+  margin-bottom: $bottom !important;
+}

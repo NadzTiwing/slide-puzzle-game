@@ -54,3 +54,73 @@ main.heroes-selection {
     transition: 0.3s;
   }
 }
+
+//playground
+.playground {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .user {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+  }
+}
+
+.go-btn {
+  border-radius: 50%;
+  background-color: lightgreen;
+  border-color: transparent;
+  width: 70px;
+  height: min-content;
+  padding: 1.5em;
+  cursor: pointer;
+  transition: 0.3s;
+  @include y-margin(auto, auto);
+  &:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+  }
+}
+
+footer.card-selection {
+  padding: 3em;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  color: black;
+  cursor: pointer;
+  @include x-margin(5px, 5px);
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 200px;
+    height: 280px;
+    z-index: 1 !important;
+  }
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 1));
+    z-index: 999 !important;
+  }
+  h4 {
+    position: absolute;
+    z-index: 999;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+}
+
