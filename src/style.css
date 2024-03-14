@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #22c55e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* puzzle */
+img {
+  max-width: 100%;
+}
+
+.slider-game {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.container {
+  display: grid;
+  width: 25em;
+  height: 25em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 8em;
+}
+
+.original-image {
+  width: 25em;
+  height: 25em;
+}
+
+.image-container {
+  border: 1px solid #ffffff;
+}
+
+#moves {
+  position: relative;
+  margin: 1em;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 786px) {
+  .slider-game {
+    flex-direction: column;
+  }
+  .container {
+    width: 20em;
+    height: 20em;
+    grid-auto-rows: 6em;
+  }
+  .original-image {
+    width: 20em;
+    height: 20em;
+  }
+}
