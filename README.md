@@ -1,4 +1,4 @@
-# superhero-card-game
-Simple Card Game
+# Slide puzzle Game
+Simple Puzzle Game
 
 ### Framework used: VueJS
